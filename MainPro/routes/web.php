@@ -20,8 +20,24 @@ Route::get('/', function () {
 
 // Route::get('/home', 'HomeController@index');
 
+Route::get('/home', 'HomeController@index');
+Route::get('/adminHome', 'HomeController@adminHomeScreen');
+
+// admin login 
+Route::get('/Adminlogin', 'loginAdmin@index'); 
+//Route::post('/login_Admin', 'loginAdmin@loginData');
+
+Route::post('/login_Admin', 'loginAdmin@foo');
+
+
 Route::get('auth/redirect', 'SocialAuthController@redirect');
 Route::get('auth/callback', 'SocialAuthController@callback');
+
+ Route::get('auth/gredirect', 'SocialAuthController@gredirect');
+ Route::get('auth/gcallback', 'SocialAuthController@gcallback');
+
+Route::get('auth/Tredirect', 'SocialAuthController@Tredirect');
+Route::get('auth/Tcallback', 'SocialAuthController@Tcallback');
 
 //Route::post('registerr', 'Auth\RegisterController@register');
 Auth::routes();

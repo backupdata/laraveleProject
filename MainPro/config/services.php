@@ -41,4 +41,16 @@ return [
     'redirect' => 'http://localhost/MainPro/auth/callback',
 ],
 
+  'google' => [
+    'client_id' => '52747882205-9rosmtir04snh4fjfcj57417k395btjc.apps.googleusercontent.com',
+    'client_secret' => 'k1xUm097YxyODBNjlleeaZ43',
+    'redirect' => 'http://localhost/MainPro/auth/gcallback',
+],
+
+'twitter' => [
+    'client_id' => 'sgXuXMxDrGrgn3Da1ViAwg6jF',
+    'client_secret' => '0QTBnwvrLf6e7oT9qvmnGqtCdIeKqKYUj5Xiw8ixM4odamFh88',
+    'redirect' => 'http://localhost/MainPro/auth/Tcallback',
+],
+
 ];
